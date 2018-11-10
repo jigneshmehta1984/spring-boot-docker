@@ -1,15 +1,15 @@
 {
-    "family": "hello-world",
+    "family": "spring-boot-docker",
     "containerDefinitions": [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
-            "name": "hello-world",
+            "name": "spring-boot-docker",
             "cpu": 10,
             "memory": 256,
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": 80,
+                    "containerPort": 8080,
                     "hostPort": 80
                 }
             ]
