@@ -2,7 +2,7 @@
     "family": "spring-boot-docker",
     "containerDefinitions": [
         {
-            "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
+            "image": "%REPOSITORY_URI%:%BUILD_VERSION%",
             "name": "spring-boot-docker",
             "cpu": 10,
             "memory": 256,
