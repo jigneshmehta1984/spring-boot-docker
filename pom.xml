@@ -20,6 +20,8 @@
     <properties>
         <docker.image.prefix>jigneshmehta1984</docker.image.prefix>
         <java.version>1.8</java.version>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
     </properties>
 
     <build>
@@ -35,7 +37,7 @@
                 <version>1.3.7</version>
                 <configuration>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                    <tag>${project.version}</tag>
+                    <tag>${project.version}_${timestamp}</tag>
                     <buildArgs>
                         <DEPENDENCY>target/dependency</DEPENDENCY>
                     </buildArgs>
