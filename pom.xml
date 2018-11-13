@@ -37,7 +37,7 @@
                 <version>1.3.7</version>
                 <configuration>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                    <tag>${project.version}_${timestamp}</tag>
+                    <tag>${project.version}</tag>
                     <buildArgs>
                         <DEPENDENCY>target/dependency</DEPENDENCY>
                     </buildArgs>
