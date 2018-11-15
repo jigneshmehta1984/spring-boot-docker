@@ -5,12 +5,12 @@
             "image": "%REPOSITORY_URI%:%BUILD_VERSION%",
             "name": "spring-boot-docker",
             "cpu": 10,
-            "memory": 256,
+            "memory": 300,
             "essential": true,
             "portMappings": [
                 {
                     "containerPort": 8080,
-                    "hostPort": 80
+                    "hostPort": 8080
                 }
             ]
         }
