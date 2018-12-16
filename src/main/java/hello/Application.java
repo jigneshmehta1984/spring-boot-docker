@@ -11,7 +11,7 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello Docker World - version 1.0.9 Docker Deployment Test Done";
+        return "Hello Docker World - version 1.0.10 Docker Deployment Test Done";
     }
 
     public static void main(String[] args) {
